@@ -5,6 +5,19 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>archicloud-tp3-push-service</name>
+  <repositories>
+      <repository>
+    <id>gcm-server-repository</id>
+    <url>https://github.com/slorber/gcm-server-repository/raw/master/releases/</url>
+	</repository>
+  </repositories>
+  <dependencies>
+      <dependency>
+	    <groupId>com.google.android.gcm</groupId>
+	    <artifactId>gcm-server</artifactId>
+	    <version>1.0.2</version>
+	</dependency>
+  </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <testSourceDirectory>test</testSourceDirectory>
